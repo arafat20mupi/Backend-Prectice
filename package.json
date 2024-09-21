@@ -7,7 +7,17 @@
     "express": "^4.21.0",
     "joi": "^17.13.3",
     "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.9.0",
     "mongoose": "^8.6.3",
     "nodemailer": "^6.9.15"
-  }
+  },
+  "name": "practice-backend-colab",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
