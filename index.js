@@ -1,6 +1,8 @@
 const express = require("express");
 const cookieParser = require("cookie-parser");
-
+const connectDB = require("./Config/dbConfig");
+const userRoute = require('./User/UserRoute');
+connectDB()
 const app = express();
 require("dotenv").config();
 
@@ -13,6 +15,8 @@ app.get("/", (req, res) => {
   res.send("hello Developer");
 });
 
+//Routes
+app.use('/api/users',userRoute);
 // Server listening
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
