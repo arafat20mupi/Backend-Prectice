@@ -3,6 +3,7 @@ const cookieParser = require("cookie-parser");
 const connectDB = require("./Config/dbConfig");
 const userRoute = require('./User/UserRoute');
 const ProductsRoute = require('./Products/ProductsRoute')
+
 connectDB()
 const app = express();
 require("dotenv").config();
@@ -16,8 +17,6 @@ app.get("/", (req, res) => {
   res.send("hello Developer");
 });
 
-//Routes
-app.use('/api/users',userRoute);
 // Server listening
 
 app.use('/api' , ProductsRoute)

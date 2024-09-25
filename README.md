@@ -7,13 +7,13 @@
     SecretKey:your_secret_key_here
     ```
 
-## 2. **All Dependance **
+## 2. All Dependance 
 
 - **mongoose**
-- **MongoDB:** 
-- **Node.js:** 
-- **Express.js:** 
-- **JWT (JSON Web Token):**
+- **MongoDB** 
+- **Node.js** 
+- **Express.js** 
+- **JWT (JSON Web Token)**
 - **cookie-parser**
 - **cors**
 - **jsonwebtoken**
